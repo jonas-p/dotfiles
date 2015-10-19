@@ -4,7 +4,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
 
-    Plugin 'altercation/vim-colors-solarized'
+    Plugin 'brendonrapp/smyck-vim'
     Plugin 'bling/vim-airline'
     Plugin 'junegunn/goyo.vim'
     Plugin 'kien/ctrlp.vim'
@@ -42,7 +42,8 @@ set guioptions-=T "remove toolbar
 set hidden
 set confirm
 
-set foldmethod=syntax
+"set foldmethod=syntax
+set nofoldenable
 set spelllang=sv
 set nowrap
 set tabstop=4
@@ -118,8 +119,8 @@ if has('autocmd')
 endif
 
 if &t_Co >= 256 || has("gui_running")
-	colorscheme solarized
-	set background=light
+	colorscheme smyck
+	set background=dark
 endif
 
 if &t_Co > 2 || has("gui_running")
