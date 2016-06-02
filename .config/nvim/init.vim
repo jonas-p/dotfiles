@@ -61,6 +61,9 @@ nmap <Leader>sv :source ~/.config/nvim/init.vim<CR>
 nmap <Leader>h :nohl<CR>
 inoremap jk <Esc>
 
+" Commands
+command Bd bp\|bd \#
+
 " Plugins
 
 map <Leader> <Plug>(easymotion-prefix)
