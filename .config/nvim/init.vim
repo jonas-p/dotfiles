@@ -10,6 +10,11 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'easymotion/vim-easymotion'
 
+  " Snippets
+  Plug 'SirVer/ultisnips'
+  Plug 'honza/vim-snippets'
+
+  " Fuzzy file finder
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install -all' }
   Plug 'junegunn/fzf.vim'
 
@@ -57,7 +62,6 @@ nmap <Leader>h :nohl<CR>
 inoremap jk <Esc>
 
 " Plugins
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 map <Leader> <Plug>(easymotion-prefix)
 
@@ -65,9 +69,7 @@ nmap \f :Files<CR>
 nmap \b :Buffers<CR>
 nmap \c :Colors<CR>
 
+let g:UltiSnipsListSnippets = "<c-l>"
 
-"" Languages
+" Languages
 let g:go_fmt_command = "goimports"
-
-" Autocommands
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
